@@ -1,0 +1,49 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+form {
+    padding: 50px;
+}
+
+input {
+    padding: 5px;
+    border-radius: 5px;
+}
+
+button {
+    padding: 10px 50px;
+    margin: 10px 0;
+    background: rgb(0, 128, 255);
+    color: #fff;
+    font-weight: 400;
+    cursor: pointer;
+}
+
+.container {
+    margin: 0 auto;
+    width: 300px;
+    box-shadow: (0, 0, 0, 0.3, #000);
+}
+
+.form-control {
+    margin-top: 5px;
+}
+
+.form-control small {
+    visibility: hidden;
+}
+
+.form-control.error small {
+    visibility: visible;
+}
+
+.form-control.error input {
+    border-color: red;
+}
+
+.form-control.success input {
+    border-color: aqua;
+}
