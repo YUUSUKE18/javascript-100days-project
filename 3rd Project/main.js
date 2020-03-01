@@ -1,8 +1,10 @@
-const para = document.getElementById('title');
-console.log(para);
+const items = document.querySelectorAll('li');
 
-const paras = document.getElementsByClassName('error');
-console.log(paras);
-
-const tag = document.getElementsByTagName('p');
-console.log(tag);
+items.forEach(item => {
+    item.addEventListener('click', e => {
+        //e.preventDefault();
+        // console.log(e.target);
+        // console.log(item);
+        e.target.style.textDecoration = "line-through";
+    });
+});
