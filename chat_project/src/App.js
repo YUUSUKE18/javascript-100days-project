@@ -2,7 +2,7 @@ import React, {useState, useEffect} from 'react';
 import axios from "axios";
 
 
-function App() {
+const App = () => {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     axios.get(`https://www.reddit.com/r/reactjs.json`).then(res => {
