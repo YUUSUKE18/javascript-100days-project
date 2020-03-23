@@ -1,11 +1,12 @@
-import React, {useEffect, useState} from 'react';
-import axios from 'axios'
+import React, {useState, useEffect} from 'react';
+import axios from "axios";
 
-const App = () => {
+
+function App() {
   const [posts, setPosts] = useState([]);
   useEffect(() => {
     axios.get(`https://www.reddit.com/r/reactjs.json`).then(res => {
-      const newPosts = res.data.data.children.map(obj => {
+      const newPosts = res.data.data.children.map(obj => obj.data);
         setPosts(newPosts);
       });
   }, []);
@@ -22,4 +23,4 @@ const App = () => {
   );
 }
 
-exports default App;
+export default App
