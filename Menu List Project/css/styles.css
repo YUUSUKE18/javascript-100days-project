@@ -58,65 +58,89 @@ img {
 a {
   text-decoration: none;
 }
-@media screen and (min-width: 800px) {
-  main {
-    min-height: 100vh;
-    display: grid;
-    place-items: center;
-  }
+main {
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+}
 
-  .title {
-    text-align: center;
-    margin-top: 1rem;
-  }
+.title {
+  text-align: center;
+  margin-top: 1rem;
+  margin-bottom: 1rem;
+}
 
-  .title h2 {
-    color: var(--clr-black);
-  }
+.title h2 {
+  color: var(--clr-black);
+}
 
-  .underline {
-    width: 2rem;
-    padding: 0.2rem 0.5rem;
-    background-color: var(--clr-gold);
-    margin: 0 auto;
-    margin-top: 0.5rem;
-  }
+.underline {
+  width: 2rem;
+  padding: 0.2rem 0.5rem;
+  background-color: var(--clr-gold);
+  margin: 0 auto;
+  margin-top: 0.5rem;
+}
+/* Filter Area */
+.btn-container {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
 
-  .section-center {
-    width: 90vw;
-    margin: 0 auto;
-    max-width: 1170px;
-    display: grid;
-    gap: 3rem 2rem;
-    justify-items: center;
-  }
+.filter-btn {
+  color: var(--clr-gold);
+  text-transform: capitalize;
+  font-size: 1rem;
+  background: transparent;
+  border: var(--clr-gold) 1px solid;
+  border-radius: 2px;
+  margin: 0.2rem;
+  padding: 0.3rem;
+  cursor: pointer;
+  transition: var(--transition);
+}
 
-  .menu-item {
-    display: grid;
-    gap: 1rem 2rem;
-    max-width: 25rem;
-  }
-  .photo {
-    object-fit: cover;
-    height: 200px;
-    border: 0.25rem solid var(--clr-gold);
-    border-radius: var(--radius);
-  }
-  .item-info header {
-    display: flex;
-    justify-content: space-between;
-    border-bottom: 0.5px dotted var(--clr-grey-5);
-  }
-  .item-info h4 {
-    margin-bottom: 0.5rem;
-  }
-  .price {
-    color: var(--clr-gold);
-  }
-  .item-text {
-    margin-bottom: 0;
-    padding-top: 1rem;
-  }
+.filter-btn:hover {
+  background: var(--clr-gold);
+  color: #ffffff;
+  transition: ease-in;
+}
+
+.section-center {
+  width: 90vw;
+  margin: 0 auto;
+  max-width: 1170px;
+  display: grid;
+  gap: 3rem 2rem;
+  justify-items: center;
+}
+
+.menu-item {
+  display: grid;
+  gap: 1rem 2rem;
+  max-width: 25rem;
+}
+.photo {
+  object-fit: cover;
+  height: 200px;
+  border: 0.25rem solid var(--clr-gold);
+  border-radius: var(--radius);
+}
+.item-info header {
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 0.5px dotted var(--clr-grey-5);
+}
+.item-info h4 {
+  margin-bottom: 0.5rem;
+}
+.price {
+  color: var(--clr-gold);
+}
+.item-text {
+  margin-bottom: 0;
+  padding-top: 1rem;
 }
 
 @media screen and (min-width: 768px) {
