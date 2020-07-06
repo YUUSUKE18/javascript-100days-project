@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form Project</title>
+    <link rel="stylesheet" href="./css/style.css" />
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <h2>Join Our Community</h2>
+        <form action="/" method="post">
+          <label class="form-label">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name!"
+          />
+          <div id="error"></div>
+          <label class="form-label">Email</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email!"
+          />
+          <div id="error"></div>
+          <label class="form-label">Password</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            placeholder="Enter your password!"
+          />
+          <div id="error"></div>
+          <button>Submit</button>
+        </form>
+      </div>
+    </main>
+    <script src="./js/main.js"></script>
+  </body>
+</html>
