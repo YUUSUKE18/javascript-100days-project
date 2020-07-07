@@ -20,34 +20,49 @@ h2 {
   max-width: 100%;
   border: 2px solid #333;
   margin-top: 30px;
+  padding: 0 5px;
 }
 
-.container form {
+.container .form-control {
+  position: relative;
+  padding-bottom: 20px;
+}
+
+.container .form-control form {
   display: flex;
   flex-direction: column;
-  padding: 15px 10px;
 }
 
-.container form .form-label {
+.form-label {
   display: block;
   margin-top: 20px;
   margin-bottom: 5px;
 }
 
-.container form input {
+.form-control input {
+  width: 100%;
   padding: 5px 0;
 }
 
-.container form #error {
+.form-control span {
+  font-size: 12px;
   position: absolute;
   bottom: 0;
   left: 0;
-  color: #e74c3c;
   visibility: hidden;
 }
 
-.container form .error-msg {
+.form-control.error span {
+  color: #e74c3c;
   visibility: visible;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.error input {
+  border-color: #e74c3c;
 }
 
 .container button {

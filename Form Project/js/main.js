@@ -3,7 +3,7 @@ const name = document.querySelector("#name");
 const email = document.querySelector("#email");
 const password = document.querySelector("#password");
 
-form.addEventListener("click", (e) => {
+form.addEventListener("submit", (e) => {
   e.preventDefault();
 
   checkForm();
@@ -28,7 +28,7 @@ function checkForm() {
   }
 
   if (passwordCheck === "") {
-    setError(name, "Please Enter Password");
+    setError(password, "Please Enter Password");
   } else {
     setSuccess(password);
   }
@@ -36,9 +36,9 @@ function checkForm() {
 
 function setError(input, message) {
   const formControl = input.parentElement;
-  const errorMsg = formControl.querySelector("#error");
-  formControl.className = "error-msg";
-  errorMsg.innerText = message;
+  const span = formControl.querySelector("span");
+  formControl.className = "form-control error";
+  span.innerText = message;
 }
 
 function setSuccess(input) {
